@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Merenkov Maksim — photo</title>
   <meta name="description" content="Portfolio photo de Merenkov Maksim — monteur vidéo." />
-   <!-- Favicon -->
+  
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -16,15 +16,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="images/favicon/site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -81,7 +72,7 @@
         radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
         radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
         radial-gradient(circle at 40% 80%, rgba(120, 219, 255, 0.3) 0%, transparent 50%);
-        animation: glow 6s ease-and-out infinite alternate;
+        animation: glow 6s ease-in-out infinite alternate;
         z-index: -1;
     }
 
@@ -338,83 +329,31 @@
     }
 
     @keyframes floatPath1 {
-      0% {
-        transform: translate(0, 0) rotate(0deg);
-        opacity: 0.25;
-      }
-      20% {
-        transform: translate(70px, -40px) rotate(72deg);
-        opacity: 0.4;
-      }
-      40% {
-        transform: translate(100px, 20px) rotate(144deg);
-        opacity: 0.3;
-      }
-      60% {
-        transform: translate(50px, 70px) rotate(216deg);
-        opacity: 0.35;
-      }
-      80% {
-        transform: translate(-30px, 30px) rotate(288deg);
-        opacity: 0.3;
-      }
-      100% {
-        transform: translate(0, 0) rotate(360deg);
-        opacity: 0.25;
-      }
+      0% { transform: translate(0, 0) rotate(0deg); opacity: 0.25; }
+      20% { transform: translate(70px, -40px) rotate(72deg); opacity: 0.4; }
+      40% { transform: translate(100px, 20px) rotate(144deg); opacity: 0.3; }
+      60% { transform: translate(50px, 70px) rotate(216deg); opacity: 0.35; }
+      80% { transform: translate(-30px, 30px) rotate(288deg); opacity: 0.3; }
+      100% { transform: translate(0, 0) rotate(360deg); opacity: 0.25; }
     }
 
     @keyframes floatPath2 {
-      0% {
-        transform: translate(0, 0) rotate(0deg);
-        opacity: 0.3;
-      }
-      25% {
-        transform: translate(-80px, 50px) rotate(90deg);
-        opacity: 0.45;
-      }
-      50% {
-        transform: translate(-120px, -30px) rotate(180deg);
-        opacity: 0.35;
-      }
-      75% {
-        transform: translate(-50px, -70px) rotate(270deg);
-        opacity: 0.4;
-      }
-      100% {
-        transform: translate(0, 0) rotate(360deg);
-        opacity: 0.3;
-      }
+      0% { transform: translate(0, 0) rotate(0deg); opacity: 0.3; }
+      25% { transform: translate(-80px, 50px) rotate(90deg); opacity: 0.45; }
+      50% { transform: translate(-120px, -30px) rotate(180deg); opacity: 0.35; }
+      75% { transform: translate(-50px, -70px) rotate(270deg); opacity: 0.4; }
+      100% { transform: translate(0, 0) rotate(360deg); opacity: 0.3; }
     }
 
     @keyframes floatPath3 {
-      0% {
-        transform: translate(0, 0) rotate(0deg);
-        opacity: 0.28;
-      }
-      20% {
-        transform: translate(-60px, -40px) rotate(72deg);
-        opacity: 0.38;
-      }
-      40% {
-        transform: translate(30px, -60px) rotate(144deg);
-        opacity: 0.32;
-      }
-      60% {
-        transform: translate(80px, -20px) rotate(216deg);
-        opacity: 0.42;
-      }
-      80% {
-        transform: translate(20px, 40px) rotate(288deg);
-        opacity: 0.35;
-      }
-      100% {
-        transform: translate(0, 0) rotate(360deg);
-        opacity: 0.28;
-      }
+      0% { transform: translate(0, 0) rotate(0deg); opacity: 0.28; }
+      20% { transform: translate(-60px, -40px) rotate(72deg); opacity: 0.38; }
+      40% { transform: translate(30px, -60px) rotate(144deg); opacity: 0.32; }
+      60% { transform: translate(80px, -20px) rotate(216deg); opacity: 0.42; }
+      80% { transform: translate(20px, 40px) rotate(288deg); opacity: 0.35; }
+      100% { transform: translate(0, 0) rotate(360deg); opacity: 0.28; }
     }
 
-    /* Content area */
     .content {
       padding: 60px 0;
       min-height: 60vh;
@@ -426,7 +365,6 @@
       flex: 1;
     }
 
-    /* Navigation */
     .main-nav {
       display: flex;
       justify-content: center;
@@ -470,7 +408,6 @@
       background: rgba(100, 255, 218, 0.1);
     }
 
-    /* Photo Gallery Styles */
     .photo-gallery {
       margin-top: 40px;
     }
@@ -527,12 +464,6 @@
       color: #FFFFFF;
       margin: 0;
       text-transform: capitalize;
-    }
-
-    .category-count {
-      font-size: 0.9rem;
-      color: #bb86fc;
-      font-weight: 400;
     }
 
     .expand-arrow {
@@ -630,13 +561,6 @@
       transform: translateY(0);
     }
 
-    .photo-title {
-      font-size: 1rem;
-      font-weight: 600;
-      margin: 0;
-      color: #64ffda;
-    }
-
     /* Lightbox Styles */
     .lightbox {
       display: none;
@@ -667,14 +591,8 @@
     }
 
     @keyframes zoomIn {
-      from {
-        transform: scale(0.8);
-        opacity: 0;
-      }
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
     }
 
     .lightbox-content img {
@@ -719,13 +637,8 @@
       border-radius: 2px;
     }
 
-    .lightbox-close::before {
-      transform: rotate(45deg);
-    }
-
-    .lightbox-close::after {
-      transform: rotate(-45deg);
-    }
+    .lightbox-close::before { transform: rotate(45deg); }
+    .lightbox-close::after { transform: rotate(-45deg); }
 
     .lightbox-nav {
       position: absolute;
@@ -758,27 +671,20 @@
       border-style: solid;
     }
 
-    .lightbox-prev {
-      left: 20px;
-    }
-
+    .lightbox-prev { left: 20px; }
     .lightbox-prev::before {
       border-width: 8px 12px 8px 0;
       border-color: transparent white transparent transparent;
       margin-left: -3px;
     }
 
-    .lightbox-next {
-      right: 20px;
-    }
-
+    .lightbox-next { right: 20px; }
     .lightbox-next::before {
       border-width: 8px 0 8px 12px;
       border-color: transparent transparent transparent white;
       margin-right: -3px;
     }
 
-    /* Footer */
     .site-footer {
       background: rgba(26, 26, 46, 0.8);
       backdrop-filter: blur(20px);
@@ -834,7 +740,7 @@
       border-bottom: 8px solid white;
     }
 
-    /* Responsive */
+    /* Адаптивность */
     @media (max-width: 1024px) {
       .header-inner {
         grid-template-columns: 1fr;
@@ -842,26 +748,14 @@
         gap: 20px;
         max-width: 600px;
       }
-
-      .text-section,
-      .contact-section {
+      .text-section, .contact-section {
         justify-self: center;
         text-align: center;
         align-items: center;
       }
-
-      .skills-list {
-        align-items: center;
-      }
-
-      .avatar {
-        justify-self: center;
-      }
-
-      .site-header {
-        min-height: 100vh;
-        padding: 3rem 2rem;
-      }
+      .skills-list { align-items: center; }
+      .avatar { justify-self: center; }
+      .site-header { min-height: 100vh; padding: 3rem 2rem; }
     }
 
     @media (max-width: 768px) {
@@ -872,130 +766,42 @@
         gap: 25px;
         padding: 20px;
       }
-
-      .text-section,
-      .contact-section {
+      .text-section, .contact-section {
         justify-self: center;
         text-align: center;
         align-items: center;
       }
-
-      .skills-list {
-        align-items: center;
-      }
-
+      .skills-list { align-items: center; }
       .avatar {
         justify-self: center;
         width: 140px;
         height: 140px;
       }
-
-      .site-title {
-        font-size: 1.5rem;
-      }
-
-      .hero-description {
-        font-size: 0.85rem;
-        max-width: 100%;
-      }
-
-      .hero-description br {
-        display: none;
-      }
-
-      .email-button {
-        padding: 10px 20px;
-        font-size: 0.85rem;
-      }
-
-      .site-header {
-        min-height: 100vh;
-        padding: 3rem 1.5rem;
-      }
-
-      .main-nav ul {
-        gap: 30px;
-        flex-wrap: wrap;
-        padding: 8px 15px;
-      }
-
-      .main-nav a {
-        padding: 12px 20px;
-        font-size: 1rem;
-      }
-
-      .content {
-        padding: 40px 0;
-      }
-
-      .categories-list {
-        margin: 0 15px;
-      }
-
-      .category-header {
-        padding: 25px 20px;
-      }
-
-      .category-title {
-        font-size: 1.3rem;
-      }
-
-      .photos-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 20px;
-      }
-
-      .footer-content {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-      }
-
-      .lightbox-nav {
-        width: 40px;
-        height: 40px;
-      }
-
-      .lightbox-close {
-        top: 10px;
-        right: 10px;
-        width: 40px;
-        height: 40px;
-      }
-
-      .lightbox-prev {
-        left: 10px;
-      }
-
-      .lightbox-next {
-        right: 10px;
-      }
+      .site-title { font-size: 1.5rem; }
+      .hero-description { font-size: 0.85rem; max-width: 100%; }
+      .hero-description br { display: none; }
+      .email-button { padding: 10px 20px; font-size: 0.85rem; }
+      .site-header { min-height: 100vh; padding: 3rem 1.5rem; }
+      .main-nav ul { gap: 30px; flex-wrap: wrap; padding: 8px 15px; }
+      .main-nav a { padding: 12px 20px; font-size: 1rem; }
+      .content { padding: 40px 0; }
+      .categories-list { margin: 0 15px; }
+      .category-header { padding: 25px 20px; }
+      .category-title { font-size: 1.3rem; }
+      .photos-grid { grid-template-columns: 1fr; gap: 20px; padding: 20px; }
+      .footer-content { flex-direction: column; gap: 20px; text-align: center; }
+      .lightbox-nav { width: 40px; height: 40px; }
+      .lightbox-close { top: 10px; right: 10px; width: 40px; height: 40px; }
+      .lightbox-prev { left: 10px; }
+      .lightbox-next { right: 10px; }
     }
 
     @media (max-width: 480px) {
-      .site-title {
-        font-size: 2rem;
-      }
-
-      .site-subtitle {
-        font-size: 1rem;
-      }
-
-      .main-nav ul {
-        gap: 20px;
-      }
-
-      .main-nav a {
-        font-size: 0.9rem;
-        padding: 10px 18px;
-      }
-
-      .expand-arrow {
-        width: 40px;
-        height: 40px;
-      }
-
+      .site-title { font-size: 2rem; }
+      .site-subtitle { font-size: 1rem; }
+      .main-nav ul { gap: 20px; }
+      .main-nav a { font-size: 0.9rem; padding: 10px 18px; }
+      .expand-arrow { width: 40px; height: 40px; }
       .expand-arrow::after {
         border-left: 6px solid transparent;
         border-right: 6px solid transparent;
@@ -1056,7 +862,6 @@
 
         <div class="categories-list">
 
-           <!-- НАЧАЛО БЛОКА КАТЕГОРИИ ФОТО (ПАПКИ) -->
           <div class="category-item">
             <button class="category-header" onclick="toggleCategory(this)">
               <div class="category-info">
@@ -1066,112 +871,31 @@
             </button>
             <div class="category-content">
               <div class="photos-grid">
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_1500.JPG" alt="Nature 1" />
-                </div>
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_1421.JPG" alt="Nature" />
-               </div>
-
-               <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_6180.JPG" alt="Nature" />
-               </div>
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_1450.JPG" alt="Nature" />
-               </div>
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_1461.JPG" alt="Nature" />
-                </div>
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_3160.JPG" alt="Nature" />
-                </div>
-
-               <div class="photo-item" onclick="openLightbox(this)">
-                 <img src="DSC_4374.JPG" alt="Nature" />
-               </div>
-
-               <div class="photo-item" onclick="openLightbox(this)">
-                 <img src="DSC_4738.JPG" alt="Nature" />
-               </div>
-
-               <div class="photo-item" onclick="openLightbox(this)">
-                <img src="DSC_4798.JPG" alt="Nature" />
-              </div>
-
-               <div class="photo-item" onclick="openLightbox(this)">
-                 <img src="DSC_5200.JPG" alt="Nature" />
-               </div>
-
-              <div class="photo-item" onclick="openLightbox(this)">
-                <img src="DSC_5203.JPG" alt="Nature" />
-              </div>
-
-              <div class="photo-item" onclick="openLightbox(this)">
-                <img src="DSC_6125.JPG" alt="Nature" />
-              </div>
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_8767.JPG" alt="Nature 3" />
-                </div>
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_0292.JPG" alt="Nature 3" />
-                </div>
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_8813.JPG" alt="Nature 3" />
-                </div>
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="image.png" alt="Nature 3" />
-                </div>
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_3974.JPG" alt="Nature 1" />
-                </div>
-                
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_4757.JPG" alt="Nature 1" />
-                </div>
-                
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_3954.JPG" alt="Nature 1" />
-                </div>
-                
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_3160.JPG" alt="Nature 1" />
-                </div>
-                
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_4273.JPG" alt="Nature 1" />
-                </div>
-                
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_4967.JPG" alt="Nature 1" />
-                </div>
-
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_5214.JPG" alt="Nature 1" />
-                </div>
-                
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_0731.JPG" alt="Nature 2" />
-                </div>
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_0563.JPG" alt="Nature 3" />
-                </div>
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_0392.JPG" alt="Nature 4" />
-                </div>
-               
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_1500.JPG" alt="Nature 1" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_1421.JPG" alt="Nature" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_6180.JPG" alt="Nature" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_1450.JPG" alt="Nature" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_1461.JPG" alt="Nature" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_3160.JPG" alt="Nature" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_4374.JPG" alt="Nature" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_4738.JPG" alt="Nature" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_4798.JPG" alt="Nature" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_5200.JPG" alt="Nature" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_5203.JPG" alt="Nature" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_6125.JPG" alt="Nature" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_8767.JPG" alt="Nature 3" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_0292.JPG" alt="Nature 3" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_8813.JPG" alt="Nature 3" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="image.png" alt="Nature 3" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_3974.JPG" alt="Nature 1" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_4757.JPG" alt="Nature 1" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_3954.JPG" alt="Nature 1" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_4273.JPG" alt="Nature 1" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_4967.JPG" alt="Nature 1" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_5214.JPG" alt="Nature 1" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_0731.JPG" alt="Nature 2" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_0563.JPG" alt="Nature 3" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_0392.JPG" alt="Nature 4" /></div>
               </div>
             </div>
           </div>
@@ -1185,23 +909,10 @@
             </button>
             <div class="category-content">
               <div class="photos-grid">
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_5742.JPG" alt="Architecture 1" />
-                </div>
-               
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_3727.JPG" alt="Architecture 2" />
-                </div>
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_2487.JPG" alt="Architecture 3" />
-                </div>
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_0032.JPG" alt="Architecture 4" />
-                </div>
-               
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_5742.JPG" alt="Architecture 1" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_3727.JPG" alt="Architecture 2" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_2487.JPG" alt="Architecture 3" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_0032.JPG" alt="Architecture 4" /></div>
               </div>
             </div>
           </div>
@@ -1215,27 +926,11 @@
             </button>
             <div class="category-content">
               <div class="photos-grid">
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_1915.jpg" alt="Portrait 1" />
-                </div>
-                
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_9227.JPG" alt="Portrait 1" />
-                </div>
-               
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_0506.JPG" alt="Portrait 2" />
-                </div>
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_2635.JPG" alt="Portrait 3" />
-                </div>
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_2144.JPG" alt="Portrait 4" />
-                </div>
-               
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_1915.jpg" alt="Portrait 1" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_9227.JPG" alt="Portrait 1" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_0506.JPG" alt="Portrait 2" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_2635.JPG" alt="Portrait 3" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_2144.JPG" alt="Portrait 4" /></div>
               </div>
             </div>
           </div>
@@ -1249,10 +944,7 @@
             </button>
             <div class="category-content">
               <div class="photos-grid">
-
-                <!-- Добавьте сюда фотографии еды -->
-               
-              </div>
+                </div>
             </div>
           </div>
 
@@ -1265,31 +957,12 @@
             </button>
             <div class="category-content">
               <div class="photos-grid">
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="тень.png" alt="Divers 1" />
-                </div>
-  
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="CSC1284.JPG" alt="Divers 2" />
-                </div>
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_4353.JPG" alt="Divers 3" />
-                </div>
-
-                <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="Flower.jpg" alt="Divers 4" />
-                </div>
-                
-               <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_1740.JPG" alt="Divers 4" />
-                </div>
-                
-                 <div class="photo-item" onclick="openLightbox(this)">
-                  <img src="DSC_1720.JPG" alt="Divers 4" />
-                </div>
-                
+                <div class="photo-item" onclick="openLightbox(this)"><img src="тень.png" alt="Divers 1" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="CSC1284.JPG" alt="Divers 2" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_4353.JPG" alt="Divers 3" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="Flower.jpg" alt="Divers 4" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_1740.JPG" alt="Divers 4" /></div>
+                <div class="photo-item" onclick="openLightbox(this)"><img src="DSC_1720.JPG" alt="Divers 4" /></div>
               </div>
             </div>
           </div>
@@ -1301,14 +974,13 @@
     <footer class="site-footer">
       <div class="footer-content">
         <div class="footer-left">
-          <small>© <span id="year">2025</span> Merenkov Maksim</small>
+          <small>© <span id="year">2026</span> Merenkov Maksim</small>
         </div>
         <button class="back-to-top" onclick="scrollToTop()" aria-label="Retour en haut"></button>
       </div>
     </footer>
   </div>
 
-  <!-- Lightbox -->
   <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
     <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Fermer"></button>
     <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1, event)" aria-label="Photo précédente"></button>
